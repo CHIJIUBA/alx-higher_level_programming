@@ -4,7 +4,6 @@
 
 def no_c(my_string):
     new_string = ""
-    count = 0
     for i in my_string:
         if not ((i == 'c') or (i == 'C')):
             new_string = new_string + i
