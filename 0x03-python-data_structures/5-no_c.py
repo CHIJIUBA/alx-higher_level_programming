@@ -3,8 +3,5 @@
 
 
 def no_c(my_string):
-    new_string = ""
-    for i in my_string:
-        if not ((i == 'c') or (i == 'C')):
-            new_string = new_string + "{:s}".format(i)
-    return new_string
+    copy_str = [x for x in my_string if x != 'c' or x != 'C']
+    return ("".join(copy_str))
