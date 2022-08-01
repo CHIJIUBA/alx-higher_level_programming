@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Inherits from the list class
+contains the MyList class
 """
 
 
