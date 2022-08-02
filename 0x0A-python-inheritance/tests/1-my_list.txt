@@ -13,6 +13,9 @@ Checking for method docstring:
 	  >>> len(mod) > 1
 	  True
 
+Checking that MyList inherits from list:
+	  >>> issubclass(MyList, list)
+	  True
 
 Checking for empty list:
 	  >>> l = MyList()
