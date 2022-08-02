@@ -3,7 +3,7 @@
 
 
 def read_file(filename=""):
-    """Add a new attribute to an object if possible.
+    """Reads from a given file.
 
     Args:
         filename (any): The name of the file to read.
