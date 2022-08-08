@@ -15,7 +15,7 @@ class Rectangle(Base):
             x (int): The height of the new rectangle.
             y (int): The height of the new rectangle.
         """
-        super.__init__(id)
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
