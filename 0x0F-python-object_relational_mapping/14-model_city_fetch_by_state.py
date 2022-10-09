@@ -15,11 +15,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-#     states_with_cities = session.query(State).join(City, State.id).order_by(cities.id)
-#     print(states_with_cities)
-
-#     for c, i in session.query(Customer, Invoice).filter(Customer.id == Invoice.custid).all():
-#    print ("ID: {} Name: {} Invoice No: {} Amount: {}".format(c.id,c.name, i.invno, i.amount))
-
-    for city, state in session.query(City, State).filter(City.state_id == State.id).order_by(City.id):
-       print("{}: ({}) {}".format(state.name, city.id, city.name))
+    for city, state in session.query(City, State) \
+                              .filter(City.state_id == State.id) \
+                              .order_by(City.id):
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
